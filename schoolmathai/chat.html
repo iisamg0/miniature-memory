@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCHOOL-MATH-AI Chat</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div id="app">
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <nav id="chatHistory">
+        <h3>Historial</h3>
+        <ul id="historyList"></ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+
+      <!-- Top Bar -->
+      <header id="topBar">
+        <div></div>
+        <button id="menuBtn">☰</button>
+
+        <div id="settingsDropdown">
+          <button id="newChatBtn">New Chat</button>
+
+          <label for="languageSelect">Language</label>
+          <select id="languageSelect">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+
+          <button id="darkModeBtn">Dark Mode</button>
+          <button id="logoutBtn">Log Out</button>
+        </div>
+      </header>
+
+      <!-- Chat -->
+      <section id="chatWindow">
+        <div class="ai-message">
+          ¡Hola! Soy tu asistente de matemáticas. ¿En qué tema te puedo ayudar hoy?
+        </div>
+      </section>
+
+      <!-- Input -->
+      <footer id="inputArea">
+        <input type="text" id="questionInput" placeholder="Ask a math question..." />
+        <button id="askBtn">Ask</button>
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+
+</html>
